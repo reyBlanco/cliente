@@ -1,0 +1,69 @@
+body{
+    background-color: darkslategrey;
+}
+
+#table{
+    background-color: wheat;
+}
+
+#uno{
+    background-color: green;
+    font-size:40px;
+    font-weight: bolder;
+}
+
+#cero{
+    background-color: red;
+    font-size:40px;
+    font-weight: bolder;
+}
+
+#verificar{
+    background-color: yellow;
+    font-size:40px;
+    font-weight: bolder;
+}
+#verificar_button{
+    background-color: aqua;
+    font-size:40px;
+    font-weight: bolder;
+}
+#encendido{
+    background-color: chocolate;
+    font-size:40px;
+    font-weight: bolder;
+}
+#apagado{
+    background-color: chocolate;
+    font-size:40px;
+    font-weight: bolder;
+}
+#form{
+    font-size: 20px;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#submit{
+    background-color: peru;
+    font-size: 30px;
+}
+
+#frase_text{
+    background-color:lightcoral;
+    font-size: 30px;
+    color:white;
+}
+#op_number{
+    background-color:lightcoral;
+    font-size: 30px;
+    color: white;
+}
+h1{
+    color:antiquewhite;
+    font-size: 50px;
+}
+#contenedor{
+    font-size: 30px;
+    color:tomato;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CLIENTE</title>
+</head>
+<body>
+    <h1>formulario</h1>
+
+    <form action="" id="form">
+        <label for="">frase:</label><input type="text" id="frase_text"><br>
+        <label for="">opcion:</label><input type="number" id="op_number"><br>
+        <input type="submit" id="submit_http" value="enviar_http"><br>
+        <input type="submit" id="submit_ws" value="enviar_ws"><br>
+    </form>
+
+    <table border="2" id="table">
+        <caption id="caption">opciones</caption>
+        <thead id="thead">
+            <th id="encendido">encendido</th>
+            <th id="apagado">apagado</th>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td id="uno">1</td>
+                <td id="cero">0</td>
+            </tr>
+            <tr>
+                <td id="verificar">verificar si servidor esta encendido</td>
+                <td><input type="button" value="verificar" id="verificar_button"></td>
+            </tr>
+           
+        </tbody>
+    </table><br>
+    <hr>
+    <h2>Respuesta del servidor</h2>
+    <div id="contenedor"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
