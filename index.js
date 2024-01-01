@@ -52,7 +52,7 @@ let paqueteGet={
 }
 //{url,data,method,mode,headers,succes,reject}
 let paqueteEnviar={
-    url:"http://192.168.100.16:3000/enviar",
+    url:"http://192.168.100.17:80/enviar",
     data:{},
     method:"POST",
     mode:"cors",
