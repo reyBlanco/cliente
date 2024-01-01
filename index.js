@@ -12,7 +12,8 @@ const $verificar_button=$tboby.querySelector("#verificar_button");
 
 const ws=new WebSocket("ws://192.168.100.16:3000");
 let res={
-    mensaje:"hola servidor"
+    frase:"hola servidor",
+    opcion:0
 }
 
 let resJson=JSON.stringify(res);
@@ -120,6 +121,7 @@ e.preventDefault();
         enviar(paqueteEnviar);
     }
     if(e.target===$submit_ws){
+        e.preventDefault();
         paqueteEnviar.data={
             frase:$frase.value,
             opcion:$op.value
