@@ -26,9 +26,9 @@ ws.addEventListener("open",(e)=>{
 ws.addEventListener("message",(e)=>{
     c(e.data);
 });
-
+//https://192.168.100.16:3000/
 let paqueteGet={
-    url:"http://192.168.100.16:3000",
+    url:"https://192.168.100.16:3000",
     succes:(resObj)=>{
         c(resObj.datosRecuperados);
         $contenedor.innerHTML="";
@@ -51,8 +51,9 @@ let paqueteGet={
     }
 }
 //{url,data,method,mode,headers,succes,reject}
+//https://192.168.100.16:3000/
 let paqueteEnviar={
-    url:"http://192.168.100.16:3000/enviar",
+    url:"https://192.168.100.16:3000/enviar",
     data:{},
     method:"POST",
     mode:"cors",
