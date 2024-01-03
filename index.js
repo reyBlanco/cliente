@@ -10,22 +10,12 @@ const $table=d.querySelector("#table");
 const $tboby=$table.querySelector("#tbody");
 const $verificar_button=$tboby.querySelector("#verificar_button");
 
-const ws=new WebSocket("ws://192.168.100.16:3000");
 let res={
     frase:"hola servidor",
     opcion:0
 }
 
 let resJson=JSON.stringify(res);
-ws.addEventListener("open",(e)=>{
-    e.preventDefault();
-   
-    ws.send(JSON.stringify(res));
-});
-
-ws.addEventListener("message",(e)=>{
-    c(e.data);
-});
 //https://192.168.100.16:3000/
 let paqueteGet={
     url:"https://192.168.100.16:3000",
@@ -120,15 +110,6 @@ e.preventDefault();
         }
         e.preventDefault();
         enviar(paqueteEnviar);
-    }
-    if(e.target===$submit_ws){
-        e.preventDefault();
-        paqueteEnviar.data={
-            frase:$frase.value,
-            opcion:$op.value
-        }
-        let stringJson=JSON.stringify(paqueteEnviar.data);
-        ws.send(stringJson);
     }
     e.preventDefault();
 });
