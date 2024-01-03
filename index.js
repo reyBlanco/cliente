@@ -42,6 +42,7 @@ let paqueteGet={
 }
 //{url,data,method,mode,headers,succes,reject}
 //https://192.168.100.16:3000/
+//https:127.0.0.1//:3000/
 let paqueteEnviar={
     url:"https://192.168.100.16:3000/enviar",
     data:{},
