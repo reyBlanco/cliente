@@ -48,7 +48,8 @@ let paqueteEnviar={
     method:"POST",
     mode:"cors",
     headers:{
-        "content-type":"application/json"
+        "content-type":"application/json",
+        'Sec-Fetch-User': '?1'
     },
     succes:(resObj)=>{
         $contenedor.innerHTML="";
